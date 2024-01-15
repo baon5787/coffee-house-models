@@ -59,6 +59,9 @@ public class OrderInfo {
 	
 	@Column(name = "order_update")
 	private Date orderUpdate;
+
+	@Column(name = "order_note")
+	private String orderNote;
 	
 	@OneToOne(mappedBy = "orderInfo",cascade = CascadeType.ALL)
 	private PaymentDetail paymentDetail;
